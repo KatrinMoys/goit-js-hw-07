@@ -14,9 +14,9 @@ const markapList = galleryItems
 </li>`;
   }).join('');
 galleryListRefs.innerHTML = markapList;
-galleryListRefs.addEventListener('click', openModal);
+/* galleryListRefs.addEventListener('click', openModal);
 
-function openModal(event) {
+ function openModal(event) {
   event.preventDefault();
   if (!event.target.classList.contains('gallery__image')) {
     return;
@@ -27,7 +27,7 @@ function openModal(event) {
       instance.close();
     }
   }
-}
+} */
 const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   captionsData: 'alt',
